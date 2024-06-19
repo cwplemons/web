@@ -1,0 +1,36 @@
+.alert {
+  position: fixed;
+  display: none;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  transition: opacity 150ms;
+}
+
+.alert.on {
+  display: block;
+}
+
+.alert-bg {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, .75);
+}
+
+.alert-msg {
+  position: fixed;
+  top: 150%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 33%;
+  min-height: 33%;
+  max-width: 90%;
+  max-height: 90%;
+  background: var(--red);
+  border-radius: .75rem;
+  transition: top 500ms;
+}
+
+.alert-msg.on {
+  top: 50%;
+}
